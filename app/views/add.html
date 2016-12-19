@@ -1,0 +1,38 @@
+<div class="container">
+    <div ng-repeat="x in an">
+        <div class="form-group">
+            <label for="exampleInputEmail1">问题{{$index+1}}</label>
+            <input ng-model="x.title" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+        </div>
+
+        <div class="form-group">
+            <label for="">问题类型</label><br>
+            <div class="radio-inline">
+                <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    填空
+  </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    单选
+  </label>
+            </div>
+            <div class="radio-inline ">
+                <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+    多选
+  </label>
+            </div>
+            <div class="radio-inline ">
+                <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+    简答
+  </label>
+            </div>
+        </div>
+    </div>
+    <div style="color:#999" class="btn btn-default glyphicon glyphicon-plus" ng-click="add()"></div>
+</div>
